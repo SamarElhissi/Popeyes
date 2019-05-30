@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="CustomWindowTitleStyle">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTitleBackgroundStyle">@android:color/holo_red_light</item>
+        <item name="android:windowTitleStyle">@style/CustomWindowTitleStyle</item>
+    </style>
+
+    <style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@android:color/holo_red_light</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+    <style name="FirstScreen" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+</resources>

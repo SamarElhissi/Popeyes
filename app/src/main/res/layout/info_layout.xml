@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    tools:context=".InfoTab"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mapRelative"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:layout_margin="10dp"
+            android:background="#eee"
+            >
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapview"
+                android:layout_width="fill_parent"
+                android:layout_height="195dp"
+                android:layout_margin="5dp"
+
+                />
+
+            <TextView
+                android:id="@+id/locationTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mapview"
+                android:text="location"
+                android:textColor="#000"
+                android:layout_margin="5dp"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/infoRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#eee"
+            android:layout_below="@+id/mapRelative">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="INFO"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/infoTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/info"
+                    android:text="infoooooo"
+                    android:textColor="#000"
+                    android:lineSpacingExtra="5dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/hourRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#eee"
+            android:layout_below="@+id/infoRelative">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/workhour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WORK HOUR"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/hoursTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/workhour"
+                    android:text="hours"
+                    android:textColor="#000"
+                    android:lineSpacingExtra="5dp"
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#eee"
+            android:layout_below="@+id/hourRelative">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/contactTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact"
+                    android:text="contact"
+                    android:textColor="#000"
+                    android:lineSpacingExtra="5dp"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#eee"
+            android:layout_below="@+id/hourRelative"
+            >
+
+            <RelativeLayout
+                android:id="@+id/socialRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/social"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SOCIAL MEDIA"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/linkin"
+                    android:src="@drawable/linkedin"
+                    android:layout_below="@+id/social"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/instogram"
+                    android:src="@drawable/instagram"
+                    android:layout_toRightOf="@+id/linkin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/social"
+                    android:layout_marginTop="10dp"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/youtube"
+                    android:src="@drawable/youtube"
+                    android:layout_toRightOf="@+id/instogram"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/social"
+                    android:layout_marginTop="10dp"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/google"
+                    android:src="@drawable/google"
+                    android:layout_toRightOf="@+id/youtube"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/social"
+                    android:layout_marginTop="10dp"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/twitter"
+                    android:src="@drawable/twitter"
+                    android:layout_toRightOf="@+id/google"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/social"
+                    android:layout_marginTop="10dp"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/facebook"
+                    android:src="@drawable/facebook"
+                    android:layout_toRightOf="@+id/twitter"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/social"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:layout_below="@+id/socialRelative">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
